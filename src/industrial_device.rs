@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-mod types;
+pub mod types;
 use types::Value;
 
 #[trait_variant::make(IndustrialDevice: Send)]
