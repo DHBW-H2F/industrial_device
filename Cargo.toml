@@ -1,0 +1,10 @@
+[package]
+name = "industrial_device"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+trait-variant = "0.1.2"
+
+[lib]
+path = "src/industrial_device.rs"
