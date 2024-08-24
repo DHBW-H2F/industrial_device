@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+pub mod errors;
 pub mod types;
 use types::Value;
 
