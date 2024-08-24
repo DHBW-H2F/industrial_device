@@ -1,3 +1,4 @@
+#[derive(Debug, Clone)]
 pub enum Value {
     U16(u16),
     U32(u32),
