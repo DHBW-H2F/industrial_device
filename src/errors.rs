@@ -5,5 +5,5 @@ custom_error! {pub IndustrialDeviceError
     RequestError{err: Box<dyn std::error::Error + Send>} = "There was an error during the request : {err:?}",
     DeviceNotConnectedError{err: Box<dyn std::error::Error + Send>} = "The device is not connected, you have to ::connect before making requests : {err:?}",
     ConversionError{err: Box<dyn std::error::Error + Send>} = "There was an error converting data : {err:?}",
-    RegisterNotFoundError{err: Box<dyn std::error::Error + Send>} = "The register could not be found : {err:?}",
+    RegisterNotFoundError{ name: String } = "The register could not be found : {name:?}",
 }
