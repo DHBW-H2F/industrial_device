@@ -9,8 +9,7 @@ use errors::IndustrialDeviceError;
 use types::Value;
 
 #[async_trait]
-#[trait_variant::make(IndustrialDevice: Send)]
-pub trait LocalIndustrialDevice {
+pub trait IndustrialDevice {
     async fn connect(&mut self) -> Result<(), IndustrialDeviceError>;
     async fn read_register_by_name(&mut self, name: &str) -> Result<Value, IndustrialDeviceError>;
     async fn write_register_by_name(

@@ -1,12 +1,11 @@
 [package]
 name = "industrial_device"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 
 [dependencies]
 async-trait = "0.1.82"
 custom_error = "1.9.2"
-trait-variant = "0.1.2"
 
 [lib]
 path = "src/industrial_device.rs"
