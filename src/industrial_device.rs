@@ -1,11 +1,14 @@
 use std::collections::HashMap;
 
+use async_trait::async_trait;
+
 pub mod errors;
 pub mod types;
 
 use errors::IndustrialDeviceError;
 use types::Value;
 
+#[async_trait]
 #[trait_variant::make(IndustrialDevice: Send)]
 pub trait LocalIndustrialDevice {
     async fn connect(&mut self) -> Result<(), IndustrialDeviceError>;
