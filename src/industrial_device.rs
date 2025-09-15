@@ -9,6 +9,7 @@ use errors::IndustrialDeviceError;
 use types::Value;
 
 #[async_trait]
+/// This code snippet defines a trait named `IndustrialDevice` in Rust. It is the "interface" of the device we need to collect the data
 pub trait IndustrialDevice {
     async fn connect(&mut self) -> Result<(), IndustrialDeviceError>;
     async fn read_register_by_name(&mut self, name: &str) -> Result<Value, IndustrialDeviceError>;
